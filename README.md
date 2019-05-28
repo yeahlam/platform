@@ -27,3 +27,12 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 模板语法
+```
+ {{data}}
+ v-bind 简写:  例如 :link="data1"
+ v-if
+ v-for
+ v-on 简写@   例如 @click="clickEvent"
+```

@@ -1,18 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="home">
+        首页
+        <div>环境:{{isDev?'测试':'生产'}}</div>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+	// @ is an alias to /src
+	import {isDev} from "../config";
+    
+	export default {
+		name: 'home',
+		data() {
+			return {
+				isDev
+			}
+		},
+		components: {}
+	}
 </script>
